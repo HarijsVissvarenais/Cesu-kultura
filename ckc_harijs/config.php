@@ -6,6 +6,6 @@ return [
     "port" => "3306",
     "user" => "root",
     "password" => "",
-    "dbname" => "blog_harijs",
+    "dbname" => "ckc_kelpins",
     "charset" => "utf8mb4"
 ];

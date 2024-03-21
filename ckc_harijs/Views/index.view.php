@@ -1,18 +1,18 @@
 <?php
-require "Components/header.php";
+require "Views/Components/header.php";
 
 $headtitle = "Posts";
-require "components/head.php" ?>
-<?php require "components/navbar.php" ?>
+?>
 
-<ol>
+<h1>Pasākumi Cēsīs</h1>
+<ul>
 <?php foreach($Pasakumi as $pasakumi) { ?>
-<li> <?= $pasakumi["Datums un laiks"]  ?></li>
+<li> <?= $pasakumi["Datums un laiks"] ." / " .$pasakumi["Nosaukums"] ." / " .$pasakumi["Norises vieta"]; ?></li>
 <?php } ?>
 
 
 
-</ol>
+</ul>
 
 <?php
 require "Components/footer.php"; ?>
